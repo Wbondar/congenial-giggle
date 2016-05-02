@@ -1,5 +1,11 @@
 package pl.chelm.pwsz.congenial_giggle
 
-trait Resolver {
-  def resolve(point : Point) : Area;
+abstract class Resolver {
+  def resolve(point : Point) : Area
+}
+
+object Resolver {
+  def apply() : Resolver = {
+    throw new AssertionError("This method is yet to be implemented.")
+  }
 }
